@@ -1,0 +1,377 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background-color: #000000;
+    color: white;
+    padding: 10px 0;
+    z-index: 1000; 
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Espaço entre o conteúdo à esquerda e à direita */
+    align-items: center; /* Alinha todos os itens verticalmente */
+    width: 100%;
+}
+nav a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+.header nav ul li {
+    display: inline-block;
+    justify-content: left;
+    margin: 0 20px;
+}
+
+.header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header nav ul li a:hover {
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+
+/* Banner */
+.banner{
+    margin-top: 90px;
+}
+
+/*Sobre*/
+
+.about h1{
+    margin: 30px;
+    color: rgba(255, 255, 255, 0.644);
+    font-family: 'Poppins', sans-serif;
+}
+
+.textos {
+    width: 1000px;
+    padding: 20px; 
+    border-radius: 8px; 
+    border: 2px solid #333;
+    text-align: left;
+    margin: 20px; 
+    font-family: 'Poppins', sans-serif;
+   
+}
+.textos p {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.644);   
+    line-height: 1.6;
+}
+.destaque {
+    color: #003cff; 
+    font-weight: bold; 
+}
+
+/* Galeria */
+
+.galeria {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #003366; /* Cor de fundo da galeria */
+}
+
+.galeria h1 { 
+    margin: 20px 0 50px 0;
+    color: rgba(255, 255, 255, 0.644);
+    font-family: 'Poppins', sans-serif;
+}
+
+.galeria ul {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    list-style-type: none;
+    margin: 0;
+    margin-left: 75px;
+    padding: 0;
+    gap: 30px;
+}
+
+.galeria li {
+    flex: 1;
+    max-width: 30%; /* Define que cada card ocupará no máximo 30% do espaço */
+}
+
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorcer */
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.5;
+}
+/*Mapa*/
+
+.map{
+    background-color: #131313;
+}
+.map h1{
+    color: rgba(255, 255, 255, 0.644);
+    text-align: center;
+    margin: 30px 0 20px 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+.map h3{
+    color: rgba(255, 255, 255, 0.644);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    height: 100vh; 
+    text-align: center; 
+    padding: 20px; 
+}
+
+.map iframe {
+    max-width: 100%;
+    height: 450px; 
+    border: 0; 
+}
+
+/*Missao*/
+.missao {
+    background-color: #003366;
+    color: white;
+    padding: 40px 20px; /* Espaçamento em volta da seção */
+    text-align: center; /* Alinha o texto no centro */
+}
+.missao h1{
+    margin: 30px 0 50px 0 ;
+    color: rgba(255, 255, 255, 0.644);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+.missao ul li{
+    list-style: none;
+    margin-top: 30px;
+}
+.missao ul li .card{
+    width: 85%;
+    margin-left: 80px;
+}
+.missao h3{
+    color: rgba(255, 255, 255, 0.644);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilo do botão */
+.btn-custom {
+    background-color: #2C3E50; /* Cor de fundo (azul escuro) */
+    color: white; /* Cor do texto */
+    padding: 12px 24px; /* Espaçamento interno (topo/bottom e esquerda/direita) */
+    font-size: 16px; /* Tamanho da fonte */
+    border: none; /* Remove a borda padrão */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para pointer ao passar o mouse */
+    transition: all 0.3s ease; /* Transição suave para os efeitos de hover/focus */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave para o botão */
+}
+
+/* Efeito de hover */
+.btn-custom:hover {
+    background-color: #34495E; /* Cor de fundo ao passar o mouse (tom mais escuro) */
+    transform: translateY(-2px); /* Levanta o botão ligeiramente */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4); /* Aumenta a sombra */
+}
+
+/* Efeito de focus (quando o botão é clicado ou selecionado) */
+.btn-custom:focus {
+    outline: none; /* Remove o contorno padrão do botão */
+    box-shadow: 0 0 0 4px rgba(52, 152, 219, 0.5); /* Sombra azul clara para foco */
+}
+
+/* Efeito de desabilitado */
+.btn-custom:disabled {
+    background-color: #7F8C8D; /* Cor de fundo desativada (cinza) */
+    cursor: not-allowed; /* Cursor de "não permitido" */
+    box-shadow: none; /* Remove sombra */
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*Doaçoes */
+#doacao{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.donation-container {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.donation-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.donation-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+#custom-amount {
+    margin-left: 25px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 150px;
+    font-size: 16px;
+}
+
+#doacao button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:focus {
+    outline: none;
+}
+
+/*Contato*/
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.5);
+}
+
+#contato button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}

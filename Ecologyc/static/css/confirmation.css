@@ -1,0 +1,63 @@
+body {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color:#131313;
+
+    
+ 
+    color: #fff; 
+    text-align: center;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container {
+    max-width: 700px;
+    padding: 40px;
+    background:transparent;
+    border-radius: 12px; 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
+    text-align: center;
+}
+
+h1 {
+    
+    font-size: 60px; /* Ajuste no tamanho */
+    margin-bottom: 20px;
+    letter-spacing: 2px; 
+}
+
+p {
+    font-size: 22px; /* Tamanho do texto ajustado */
+    color: #ffffff; /* Texto cinza escuro */
+    line-height: 1.8; /* Espaçamento para melhor leitura */
+    margin-bottom: 30px;
+}
+
+a {
+    display: inline-block; /* Mantém o botão no centro */
+    margin: 0 auto; /* Centraliza o botão */
+    padding: 10px 40px; /* Reduz o preenchimento para diminuir a largura */
+    background: linear-gradient(135deg, #0583F2, #34495E); /* Gradiente no botão */
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px; /* Tamanho do texto ligeiramente menor */
+    font-weight: bold;
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-align: center; /* Garante alinhamento do texto */
+    width: auto; /* Deixa a largura ajustável ao conteúdo */
+    max-width: 300px; /* Define uma largura máxima, se necessário */
+}
+
+
+a:hover {
+    background: linear-gradient(135deg, #34495E, #0583F2); /* Reversão do gradiente no hover */
+    transform: translateY(-5px); /* Elevação mais pronunciada */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); /* Sombra mais intensa no hover */
+}

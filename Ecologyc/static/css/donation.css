@@ -1,0 +1,63 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Fonte moderna */
+    margin: 0;
+    padding: 0;
+    background-color:#131313;
+
+    
+    background-size: cover; /* Garante que o gradiente cubra toda a tela */
+    color: #fff; /* Texto branco para contraste */
+    text-align: center;
+    height: 100vh; /* Altura total da tela */
+    display: flex;
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    justify-content: center; /* Centraliza os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos horizontalmente */
+}
+
+.container {
+    max-width: 700px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco translúcido */
+    border-radius: 12px; /* Bordas suaves */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Sombra mais intensa */
+    text-align: center;
+}
+
+h1 {
+    color: #0583F2; /* Azul vibrante */
+    font-size: 60px; /* Ajuste no tamanho */
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Texto em maiúsculas para destaque */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+}
+
+p {
+    font-size: 22px; /* Tamanho do texto ajustado */
+    color: #ffffff;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+a {
+    display: inline-block; 
+    margin: 0 auto;
+    padding: 10px 40px; 
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px; 
+    font-weight: bold;
+    border-radius: 12px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    text-align: center; 
+    width: auto;
+    max-width: 300px;
+}
+
+
+a:hover {
+    background: linear-gradient(135deg, #34495E, #0583F2); 
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); 
+}
